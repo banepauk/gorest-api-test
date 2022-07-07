@@ -11,7 +11,7 @@ describe('update user',() =>{
     let newValidEmail = faker.internet.email('Test', 'Testing')
 
   //First need to create user so i can update it, need to be sure that id is same, create and update is in one it block
-    it.only('create and update without email',()=>{
+    it('create and update without email',()=>{
       cy.request({
         method:'POST',
         url: 'https://gorest.co.in/public/v2/users',
